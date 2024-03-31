@@ -1,7 +1,14 @@
 package in.codegram.birthday_scheduler_using_quartz.payload;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Set;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Setter
+@Getter
 public class ScheduleEmailResponse {
 
     private boolean success;
